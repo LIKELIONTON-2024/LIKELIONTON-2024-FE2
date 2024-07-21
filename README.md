@@ -39,56 +39,58 @@
 src
 ├── \010Router.jsx
 ├── assets
-│   ├── Icons
-│   │   ├── BottomTabIcons
-│   │   │   ├── authTab.png
-│   │   │   ├── emoji-happy.svg
-│   │   │   ├── friendsTab.png
-│   │   │   ├── ghost.svg
-│   │   │   ├── heart-add.svg
-│   │   │   └── myPageTab.png
-│   │   └── goBack.png
-│   ├── MyPageIcons
-│   │   ├── activities.png
-│   │   ├── badge.png
-│   │   ├── calendar.png
-│   │   ├── detail-arrow.png
-│   │   ├── indicator.png
-│   │   ├── inventory.png
-│   │   ├── left-arrow.png
-│   │   ├── line.png
-│   │   ├── right-arrow.png
-│   │   ├── setting.png
-│   │   └── shop.png
-│   └── cat-base.png
+│   ├── Icons
+│   │   ├── BottomTabIcons
+│   │   │   ├── authTab.png
+│   │   │   ├── emoji-happy.svg
+│   │   │   ├── friendsTab.png
+│   │   │   ├── ghost.svg
+│   │   │   ├── heart-add.svg
+│   │   │   └── myPageTab.png
+│   │   └── goBack.png
+│   ├── MyPageIcons
+│   │   ├── activities.png
+│   │   ├── badge.png
+│   │   ├── calendar.png
+│   │   ├── detail-arrow.png
+│   │   ├── indicator.png
+│   │   ├── inventory.png
+│   │   ├── left-arrow.png
+│   │   ├── line.png
+│   │   ├── right-arrow.png
+│   │   ├── setting.png
+│   │   └── shop.png
+│   └── cat-base.png
 ├── components
-│   ├── BasicHeader.jsx
-│   ├── CalendarLocaleConfig.jsx
-│   ├── CalendarModal.jsx
-│   ├── ConsecutiveDaysDisplay.jsx
-│   ├── CustomArrows.jsx
-│   ├── DetailArrow.jsx
-│   └── LevelBar.jsx
+│   ├── BasicHeader.jsx
+│   ├── CalendarLocaleConfig.jsx
+│   ├── CalendarModal.jsx
+│   ├── ConsecutiveDaysDisplay.jsx
+│   ├── CustomArrows.jsx
+│   ├── DetailArrow.jsx
+│   └── LevelBar.jsx
 ├── module
-│   ├── Color.js
-│   └── Icons.js
+│   ├── Color.js
+│   └── Icons.js
 ├── screens
-│   ├── AuthScreen.jsx
-│   ├── FriendsScreen.jsx
-│   └── MyPageScreen
-│       ├── MyPageScreen.jsx
-│       ├── section
-│       │   ├── ProfileSection.jsx
-│       │   ├── SettingSection.jsx
-│       │   └── TabSection.jsx
-│       ├── settingScreen
-│       │   └── ProfileSection.jsx
-│       └── tabScreen
-│           ├── ActivitiesScreen.jsx
-│           ├── CalendarScreen.jsx
-│           ├── InventoryScreen.jsx
-│           ├── SettingScreen.jsx
-│           └── ShopScreen.jsx
+│   ├── AuthScreen.jsx
+│   ├── FriendsScreen.jsx
+│   └── MyPageScreen
+│       ├── MyPageScreen.jsx
+│       ├── section
+│       │   ├── ProfileSection.jsx
+│       │   ├── SettingSection.jsx
+│       │   └── TabSection.jsx
+│       ├── settingScreen
+│       │   └── ProfileSection.jsx
+│       ├── shopScreen
+│       │   └── shopBottomSheet.jsx
+│       └── tabScreen
+│           ├── ActivitiesScreen.jsx
+│           ├── CalendarScreen.jsx
+│           ├── InventoryScreen.jsx
+│           ├── SettingScreen.jsx
+│           └── ShopScreen.jsx
 └── utils
     └── dateUtils.jsx
 ```

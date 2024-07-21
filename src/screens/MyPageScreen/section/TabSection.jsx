@@ -11,7 +11,7 @@ import ActivitiesScreen from '../tabScreen/ActivitiesScreen';
 // import InventoryScreen from '../tabScreen/InventoryScreen';
 // 일단 인벤토리 지움
 
-const Indicator = require('../../../assets/MyPageIcons/indicator.png');
+const IndicatorImage = require('../../../assets/MyPageIcons/indicator.png');
 
 const TabSection = () => {
   const navigation = useNavigation();
@@ -39,20 +39,33 @@ const TabSection = () => {
     // inventory: InventoryScreen,
   });
 
-  const renderTabBar = props => (
-    <TabBar
-      {...props}
-      style={styles.tabBar}
-      renderLabel={({route}) => (
-        <View style={styles.tabLabelContainer}>
-          <Image source={route.icon} style={[styles.icon]} />
-          <Text style={[styles.tabLabel]}>{route.title}</Text>
-        </View>
-      )}
-      indicatorStyle={styles.indicator}
-      onTabPress={({route}) => handleTabPress(route)}
-    />
-  );
+  const renderTabBar = props => {
+    const {navigationState} = props;
+    const tabWidth = 357 / routes.length;
+    const indicatorWidth = 58;
+    const indicatorPosition =
+      (tabWidth - indicatorWidth) / 2 + index * tabWidth;
+    return (
+      <View style={styles.tabBarContainer}>
+        <TabBar
+          {...props}
+          style={styles.tabBar}
+          renderLabel={({route}) => (
+            <View style={styles.tabLabelContainer}>
+              <Image source={route.icon} style={[styles.icon]} />
+              <Text style={[styles.tabLabel]}>{route.title}</Text>
+            </View>
+          )}
+          indicatorStyle={styles.indicator}
+          onTabPress={({route}) => handleTabPress(route)}
+        />
+        <Image
+          source={IndicatorImage}
+          style={[styles.indicatorImage, {left: indicatorPosition}]}
+        />
+      </View>
+    );
+  };
 
   return (
     <View style={styles.tabViewContainer}>
@@ -68,6 +81,10 @@ const TabSection = () => {
 };
 
 const styles = StyleSheet.create({
+  tabBarContainer: {
+    position: 'relative',
+    zIndex: 10, // Ensure this is on top of other elements
+  },
   tabBar: {
     backgroundColor: COLOR.GRAY_100,
     borderRadius: 20,
@@ -90,10 +107,20 @@ const styles = StyleSheet.create({
     height: 34,
     resizeMode: 'contain',
   },
-  // TODO: 인디케이터 디자인 -> 이미지로 가능하다면,,?
   indicator: {
-    backgroundColor: COLOR.BLUE_400,
-    height: 4,
+    backgroundColor: COLOR.TRANSPARENT,
+  },
+  indicatorImage: {
+    position: 'absolute',
+    bottom: -4,
+    width: 58,
+    height: 7,
+    resizeMode: 'contain',
+    zIndex: 11,
+  },
+  tabViewContainer: {
+    flex: 1,
+    zIndex: 10,
   },
 });
 
