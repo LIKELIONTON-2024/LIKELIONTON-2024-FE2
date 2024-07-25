@@ -1,20 +1,10 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {SafeAreaView, Text, View} from 'react-native';
+import {COLOR} from '../libs/Color';
 
-function FriendList() {
+export default () => {
   return (
-    <View style={styles.container}>
-      <Text>Friends List</Text>
-    </View>
+    <SafeAreaView style={{flex: 1, backgroundColor: COLOR.WHITE}}>
+      <Text>리스트</Text>
+    </SafeAreaView>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-export default FriendList;
+};

@@ -6,7 +6,9 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import {COLOR} from '../module/Color';
+
+import Cat from '../assets/images/defaultCat.png';
+import {COLOR} from '../libs/Color';
 import {Button} from '../components/common/button';
 import {Margin} from '../components/common/Margin';
 import place from '../assets/icons/placeIcon.png';
@@ -14,6 +16,7 @@ import camera from '../assets/icons/cameraIcon.png';
 import notification from '../assets/icons/notificationIcon.png';
 import {useState} from 'react';
 import AgreeModal from '../components/Account/AgreeModal';
+import {useRoute} from '@react-navigation/native';
 
 const PermissionContent = ({onPress, image, title, contents}) => {
   return (
@@ -43,6 +46,8 @@ const PermissionContent = ({onPress, image, title, contents}) => {
 
 export default ({navigation}) => {
   const [isVisible, setIsVisible] = useState(false);
+  const route = useRoute();
+  const {name, params, path} = route;
 
   const onPressNextButton = () => {
     // openModal

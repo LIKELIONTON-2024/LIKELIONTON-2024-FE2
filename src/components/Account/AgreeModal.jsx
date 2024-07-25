@@ -7,9 +7,10 @@ import {
   View,
 } from 'react-native';
 import ReactNativeModal from 'react-native-modal';
-import {COLOR} from '../../module/Color';
+
 import {Button} from '../common/button';
 import {Margin} from '../common/Margin';
+import {COLOR} from '../../libs/Color';
 
 const {width, height} = Dimensions.get('screen');
 

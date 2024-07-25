@@ -4,7 +4,7 @@ import SettingSection from './section/SettingSection';
 import ProfileSection from './section/ProfileSection';
 import TabSection from './section/TabSection';
 
-import {COLOR} from '../libs/Color';
+import {COLOR} from '../../module/Color';
 
 function MyPageScreen() {
   return (

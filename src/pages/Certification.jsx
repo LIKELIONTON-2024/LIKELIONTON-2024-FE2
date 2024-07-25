@@ -1,20 +1,10 @@
-import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {SafeAreaView, Text, View} from 'react-native';
+import {COLOR} from '../libs/Color';
 
-function Certification() {
+export default () => {
   return (
-    <View style={styles.container}>
-      <Text>Certification</Text>
-    </View>
+    <SafeAreaView style={{flex: 1, backgroundColor: COLOR.WHITE}}>
+      <Text>인증</Text>
+    </SafeAreaView>
   );
-}
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
-
-export default Certification;
+};
