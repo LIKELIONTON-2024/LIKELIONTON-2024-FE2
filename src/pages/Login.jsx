@@ -2,6 +2,7 @@ import {Image, SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
 import {COLOR} from '../module/Color';
 import React from 'react';
 import {Button} from '../components/common/button';
+import GoogleLoginButton from '../components/GoogleButton';
 
 export default ({navigation}) => {
   return (
@@ -45,11 +46,7 @@ export default ({navigation}) => {
           bgColor={COLOR.NAVERBUTTON}
           text={'네이버로 계속하기'}
         />
-        <Button
-          onPress={() => {}}
-          bgColor={COLOR.GRAY_100}
-          text={'구글로 계속하기'}
-        />
+        <GoogleLoginButton />
       </View>
     </SafeAreaView>
   );
