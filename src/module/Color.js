@@ -1,6 +1,6 @@
 export const COLOR = {
-  WHITE: '#fefeff',
-  BLACK: '#333333',
+  WHITE: '#ffffff',
+  BLACK: '#000000',
   BLUE_100: '#F2FAFF',
   BLUE_200: '#DAF1FF',
   BLUE_300: '#B7E3FF',
@@ -12,6 +12,4 @@ export const COLOR = {
   GRAY_200: '#99999F',
   GRAY_300: '#505053',
   GRAY_400: '#2D2D2F',
-  NAVERBUTTON: '#09CD5E',
-  KAKAOBUTTON: '#FFE92F',
 };

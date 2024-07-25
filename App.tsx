@@ -1,12 +1,11 @@
 import React from 'react';
-import 'react-native-gesture-handler';
-import Router from './src/Router';
 import {NavigationContainer} from '@react-navigation/native';
+import MyTabs from './src/Router';
 
-function App(): React.JSX.Element {
+function App() {
   return (
     <NavigationContainer>
-      <Router />
+      <MyTabs />
     </NavigationContainer>
   );
 }
