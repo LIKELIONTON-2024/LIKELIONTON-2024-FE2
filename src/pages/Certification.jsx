@@ -1,5 +1,5 @@
 import {SafeAreaView, Text, View} from 'react-native';
-import {COLOR} from '../module/Color';
+import {COLOR} from '../libs/Color';
 
 export default () => {
   return (

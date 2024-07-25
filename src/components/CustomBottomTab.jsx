@@ -15,7 +15,7 @@ import friendListOff from '../assets/icons/friendListOff.png';
 import friendListOn from '../assets/icons/friendListOn.png';
 import certificationOff from '../assets/icons/certificationOff.png';
 import certificationOn from '../assets/icons/certificationOn.png';
-import {COLOR} from '../module/Color';
+import {COLOR} from '../libs/Color';
 
 const CustomBottomTab = ({state, navigation, insets, descriptors}) => {
   const tab1Value = useRef(new Animated.Value(0)).current;

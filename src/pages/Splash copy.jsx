@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 import {StyleSheet, Text, View} from 'react-native';
-import {COLOR} from '../module/Color';
+import {COLOR} from '../libs/Color';
 
 export default ({navigation}) => {
   useEffect(() => {
