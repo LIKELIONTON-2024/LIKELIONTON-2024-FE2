@@ -16,6 +16,17 @@ const Tab = createBottomTabNavigator();
 // 바텀탭
 const renderBottomBar = props => <CustomBottomTab {...props} />;
 
+const ShopStackNavigator = () => (
+  <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Screen name="ShopScreen" component={ShopScreen} />
+  </Stack.Navigator>
+);
+
+const SettingStackNavigator = () => (
+  <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Screen name="SettingScreen" component={SettingScreen} />
+  </Stack.Navigator>
+);
 // 홈 , 커뮤니티 , 도구 , 마이페이지
 const MainTab = () => {
   return (
