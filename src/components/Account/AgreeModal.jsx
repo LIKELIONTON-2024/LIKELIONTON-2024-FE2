@@ -10,6 +10,10 @@ import ReactNativeModal from 'react-native-modal';
 import {Button} from '../common/button';
 import {Margin} from '../common/Margin';
 import {COLOR} from '../../module/Color';
+import {COLOR} from '../../module/Color';
+import {Button} from '../common/button';
+import {Margin} from '../common/Margin';
+import {useMemo} from 'react';
 
 const {width, height} = Dimensions.get('screen');
 
@@ -18,6 +22,8 @@ export default ({isVisible, setIsVisible, navigation}) => {
     setIsVisible(false);
     navigation.navigate('SignUp');
   };
+
+  const agreeButtonStyle = useMemo(() => {}, []);
   return (
     <SafeAreaView>
       <ReactNativeModal

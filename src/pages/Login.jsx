@@ -1,10 +1,13 @@
-import {Image, SafeAreaView, Text, TouchableOpacity, View} from 'react-native';
+import {SafeAreaView, Text, View} from 'react-native';
 import {COLOR} from '../module/Color';
 import React from 'react';
 import {Button} from '../components/common/button';
-import GoogleLoginButton from '../components/GoogleButton';
+import GoogleLoginButton from '../components/GoogleLoginButton';
 
 export default ({navigation}) => {
+  const onPresskakaoBtn = () => {
+    navigation.navigate('Agree');
+  };
   return (
     <SafeAreaView
       style={{
@@ -37,7 +40,7 @@ export default ({navigation}) => {
           gap: 14,
         }}>
         <Button
-          onPress={() => navigation.navigate('Agree')}
+          onPress={onPresskakaoBtn}
           bgColor={COLOR.KAKAOBUTTON}
           text={'카카오로 계속하기'}
         />

@@ -39,6 +39,7 @@ export default ({navigation}) => {
         <View style={{gap: 11, paddingHorizontal: 34}}>
           <Text style={{fontWeight: 'semibold', fontSize: 17}}>닉네임</Text>
           <TextInput
+            autoCapitalize={'none'}
             style={{
               width: 325,
               height: 47,
@@ -46,6 +47,7 @@ export default ({navigation}) => {
               borderWidth: 0.5,
               borderColor: COLOR.GRAY_200,
               borderRadius: 12,
+              padding: 10,
             }}
           />
           <Text style={{color: COLOR.GRAY_200}}>
@@ -64,6 +66,7 @@ export default ({navigation}) => {
                 borderRadius: 12,
                 position: 'relative',
               }}
+              autoCapitalize={'none'}
             />
             <Image
               source={search}
