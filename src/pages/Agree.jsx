@@ -7,7 +7,7 @@ import {
   View,
 } from 'react-native';
 import Cat from '../assets/images/defaultCat.png';
-import {COLOR} from '../module/Color';
+import {COLOR} from '../libs/Color';
 import {Button} from '../components/common/button';
 import {Margin} from '../components/common/Margin';
 import place from '../assets/icons/placeIcon.png';

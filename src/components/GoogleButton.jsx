@@ -3,7 +3,6 @@ import {useState} from 'react';
 import {Alert, View} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 import {Button} from './common/button';
-import {COLOR} from '../module/Color';
 import {BaseURL} from '../libs/api';
 // import BaseURL from '@env';
 
@@ -42,7 +41,6 @@ export default function GoogleLoginButton({onPress}) {
   return (
     <Button
       onPress={handleGoogleLogin}
-      bgColor={COLOR.GRAY_100}
       text={loading ? '로딩 중...' : '구글로 계속하기'}
       disabled={loading}
     />
