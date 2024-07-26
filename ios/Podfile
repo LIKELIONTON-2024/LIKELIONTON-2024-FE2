@@ -17,6 +17,9 @@ end
 target 'hikhikhomuri' do
   config = use_native_modules!
 
+  pod 'RNReanimated', :path => '../node_modules/react-native-reanimated'
+  use_frameworks!
+
   use_react_native!(
     :path => config[:reactNativePath],
     # An absolute path to your application root.
