@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text, StyleSheet, ScrollView, Image} from 'react-native';
 
-import {COLOR} from '../../../module/Color';
+import {COLOR} from '../../libs/Color';
 
-const Line = require('../../../assets/MyPageIcons/line.png');
-const Badge = require('../../../assets/MyPageIcons/badge.png');
+const Line = require('../../assets/images/line.png');
+const Badge = require('../../assets/images/badge.png');
 
 const ActivitiesScreen = () => (
   <ScrollView>

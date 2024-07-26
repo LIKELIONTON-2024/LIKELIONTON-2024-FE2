@@ -2,10 +2,10 @@ import React from 'react';
 import {View, Text, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-import {COLOR} from '../../../module/Color';
+import {COLOR} from '../../libs/Color';
 
-const ProfileImg = require('../../../assets/cat-base.png');
-const DetailArrow = require('../../../assets/MyPageIcons/detail-arrow.png');
+const ProfileImg = require('../../assets/images/defaultCat.png');
+const DetailArrow = require('../../components/DetailArrow');
 
 const ProfileSection = () => {
   const navigation = useNavigation();

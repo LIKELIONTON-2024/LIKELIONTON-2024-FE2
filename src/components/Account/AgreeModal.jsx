@@ -7,6 +7,7 @@ import {
   View,
 } from 'react-native';
 import ReactNativeModal from 'react-native-modal';
+
 import {Button} from '../common/button';
 import {Margin} from '../common/Margin';
 import {COLOR} from '../../libs/Color';

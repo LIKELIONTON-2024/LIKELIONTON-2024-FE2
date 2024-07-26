@@ -2,10 +2,10 @@ import React, {useState} from 'react';
 import {View, Text, StyleSheet, SafeAreaView, Image} from 'react-native';
 import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import ShopBottomSheet from '../shopScreen/shopBottomSheet';
-import BasicHeader from '../../../components/BasicHeader';
-import {COLOR} from '../../../module/Color';
+import BasicHeader from '../../components/BasicHeader';
+import {COLOR} from '../../libs/Color';
 
-const Cat = require('../../../assets/cat-base.png');
+const Cat = require('../../assets/images/defaultCat.png');
 
 const ShopScreen = ({navigation}) => {
   const [activeTab, setActiveTab] = useState('눈');
@@ -13,7 +13,7 @@ const ShopScreen = ({navigation}) => {
   return (
     <GestureHandlerRootView style={{flex: 1}}>
       <SafeAreaView style={styles.safeAreaView}>
-        <BasicHeader toScreen={'MyPageScreen'} />
+        <BasicHeader toScreen={'MyPage'} />
         <View style={styles.container}>
           <Image source={Cat} style={styles.catImage} />
           <Text style={styles.text}>상점.</Text>

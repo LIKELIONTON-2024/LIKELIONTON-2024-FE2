@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+
 import Cat from '../assets/images/defaultCat.png';
 import {COLOR} from '../libs/Color';
 import {Button} from '../components/common/button';

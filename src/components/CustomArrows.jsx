@@ -4,7 +4,7 @@ import {Image, View, StyleSheet} from 'react-native';
 const LeftArrow = () => (
   <View style={styles.arrowContainer}>
     <Image
-      source={require('../assets/MyPageIcons/left-arrow.png')}
+      source={require('../assets/images/leftArrow.png')}
       style={styles.arrow}
     />
   </View>
@@ -13,7 +13,7 @@ const LeftArrow = () => (
 const RightArrow = () => (
   <View style={styles.arrowContainer}>
     <Image
-      source={require('../assets/MyPageIcons/right-arrow.png')}
+      source={require('../assets/images/rightArrow.png')}
       style={styles.arrow}
     />
   </View>

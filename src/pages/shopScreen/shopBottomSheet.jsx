@@ -8,32 +8,32 @@ import {
   Image,
 } from 'react-native';
 import BottomSheet from '@gorhom/bottom-sheet';
-import {COLOR} from '../../../module/Color';
+import {COLOR} from '../../libs/Color';
 
 const imagesByTab = {
   눈: [
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
   ],
   털: [
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
   ],
   배경: [
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
   ],
   악세사리: [
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
-    require('../../../assets/cat-base.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
+    require('../../assets/images/defaultCat.png'),
   ],
 };
 

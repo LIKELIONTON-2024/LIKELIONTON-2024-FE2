@@ -1,8 +1,8 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
-import {COLOR} from '../../../module/Color';
+import {COLOR} from '../../libs/Color';
 
-const ProfileImg = require('../../../assets/cat-base.png');
+const ProfileImg = require('../../assets/images/defaultCat.png');
 
 const ProfileSection = () => (
   <View style={styles.profileImgContainer}>

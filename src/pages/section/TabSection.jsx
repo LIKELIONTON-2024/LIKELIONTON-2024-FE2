@@ -3,15 +3,15 @@ import {View, useWindowDimensions, StyleSheet, Text, Image} from 'react-native';
 import {TabView, SceneMap, TabBar} from 'react-native-tab-view';
 import {useNavigation} from '@react-navigation/native';
 
-import {MY_PAGE_ICONS} from '../../../module/Icons';
-import {COLOR} from '../../../module/Color';
+import {MY_PAGE_ICONS} from '../../libs/Icons';
+import {COLOR} from '../../libs/Color';
 
 import CalendarScreen from '../tabScreen/CalendarScreen';
 import ActivitiesScreen from '../tabScreen/ActivitiesScreen';
 // import InventoryScreen from '../tabScreen/InventoryScreen';
 // 일단 인벤토리 지움
 
-const IndicatorImage = require('../../../assets/MyPageIcons/indicator.png');
+const IndicatorImage = require('../../assets/images/indicator.png');
 
 const TabSection = () => {
   const navigation = useNavigation();

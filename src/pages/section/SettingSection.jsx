@@ -2,7 +2,7 @@ import React from 'react';
 import {TouchableOpacity, StyleSheet, Image} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
-const SettingIcon = require('../../../assets/MyPageIcons/setting.png');
+const SettingIcon = require('../../assets/icons/settingIcon.png');
 
 const SettingSection = () => {
   const navigation = useNavigation();

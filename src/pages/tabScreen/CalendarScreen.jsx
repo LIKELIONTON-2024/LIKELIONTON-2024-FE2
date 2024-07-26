@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react';
 import {ScrollView, View, StyleSheet} from 'react-native';
 import {Calendar} from 'react-native-calendars';
-import {LeftArrow, RightArrow} from '../../../components/CustomArrows';
-import ConsecutiveDaysDisplay from '../../../components/ConsecutiveDaysDisplay';
-import {calculateConsecutiveDays} from '../../../utils/dateUtils';
-import {CalendarLocaleConfig} from '../../../components/CalendarLocaleConfig';
+import {LeftArrow, RightArrow} from '../../components/CustomArrows';
+import ConsecutiveDaysDisplay from '../../components/ConsecutiveDaysDisplay';
+import {calculateConsecutiveDays} from '../../utils/dateUtils';
+import {CalendarLocaleConfig} from '../../components/CalendarLocaleConfig';
 // import CalendarModal from '../../../components/CalendarModal';
 
-import {COLOR} from '../../../module/Color';
+import {COLOR} from '../../libs/Color';
 
 CalendarLocaleConfig();
 

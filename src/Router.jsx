@@ -1,3 +1,4 @@
+import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import FriendList from './pages/FriendList';
@@ -9,6 +10,8 @@ import SignUp from './pages/SignUp';
 import Agree from './pages/Agree';
 import SplashLogin from './pages/SplashLogin';
 import CustomBottomTab from './components/CustomBottomTab';
+import ShopScreen from './pages/tabScreen/ShopScreen';
+import SettingScreen from './pages/tabScreen/SettingScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -27,7 +30,8 @@ const SettingStackNavigator = () => (
     <Stack.Screen name="SettingScreen" component={SettingScreen} />
   </Stack.Navigator>
 );
-// 홈 , 커뮤니티 , 도구 , 마이페이지
+
+// 홈, 커뮤니티, 도구, 마이페이지
 const MainTab = () => {
   return (
     <Tab.Navigator
@@ -41,7 +45,7 @@ const MainTab = () => {
     </Tab.Navigator>
   );
 };
-// Certification
+
 const Router = () => {
   return (
     <Stack.Navigator
@@ -54,6 +58,8 @@ const Router = () => {
       <Stack.Screen name="MainTab" component={MainTab} />
       <Stack.Screen name="Agree" component={Agree} />
       <Stack.Screen name="SplashLogin" component={SplashLogin} />
+      <Stack.Screen name="ShopStack" component={ShopStackNavigator} />
+      <Stack.Screen name="SettingStack" component={SettingStackNavigator} />
     </Stack.Navigator>
   );
 };
